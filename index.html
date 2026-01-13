@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="WDD 231 Course Home Page">
+  <meta name="author" content="Clinton Selekeowei">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>WDD 231 - Course Home</title>
+
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD231 - Clinton Selekeowei</h1>
+
+<header>
+  <div class="top-header">
+    <div class="brand">
+      <img src="images/logo.svg" alt="Site Logo">
+      <span>Clinton Selekeowei</span>
+    </div>
+
+    <button id="menuBtn" aria-label="Toggle Menu">☰</button>
+  </div>
+
+  <nav id="navMenu">
+    <a href="index.html" class="active">Home</a>
+    <a href="chamber/index.html">Chamber Project</a>
+    <a href="final/index.html">Final Project</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Home</h1>
+
+  <div class="home-grid">  
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      A driven and passionate frontend developer and product designer living in Port Harcourt, Nigeria. I bring a unique perspective to the design and development process, always putting the user experience first. I thrives in collaborative environments and I’m dedicated to problem solving through the use of technology. I’m an active listener and clear communicator. I spend my free time watching or playing football, reading, or learning and improving my skills. I am a proactive and quick learner who is always looking for new challenges and ways to innovate in my field.
+    </p>
+  </section>
+
+  <section class="photo">
+    <h2>Student Photo</h2>
+    <img src="images/profile.jpg" alt="My photo">
+  </section>
+  </div>
+  <section class="courses">
+    <h2>Web Certificate Courses</h2>
+
+    <div class="filters">
+        <button id="allBtn" class="filter-btn active">All</button>
+        <button id="cseBtn" class="filter-btn">CSE</button>
+        <button id="wddBtn" class="filter-btn">WDD</button>
+    </div>
+
+    <div id="courseContainer"></div>
+
+    <p class="credits">Total Credits: <span id="totalCredits">0</span></p>
+  </section>
+</main>
+
+<footer>
+  <div class="social">
+    <a href="https://github.com/clintos80" target="_blank" aria-label="GitHub">
+    <img src="images/github.svg" alt="GitHub icon">
+  </a>
+
+  <a href="https://linkedin.com/in/ismeclint" target="_blank" aria-label="LinkedIn">
+    <img src="images/linkedin.svg" alt="LinkedIn icon">
+  </a>
+
+  <a href="https://x.com/ismeclint" target="_blank" aria-label="X">
+    <img src="images/x.svg" alt="X icon">
+  </a>
+  </div>
+
+  <p>
+    © <span id="currentYear"></span> Clinton Selekeowei • Nigeria
+  </p>
+
+  <p id="lastModified"></p>
+</footer>
+
 </body>
 </html>

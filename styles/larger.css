@@ -1,0 +1,36 @@
+@media (min-width: 768px) {
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  h1 {
+    margin-top: 5rem;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background: #222;
+  }
+
+  nav a {
+    border: none;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  /*  Main Layout  */
+  .home-grid {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #courseContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
